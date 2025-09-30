@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!----------------------------------------------Nav-Bar--------------------------------------------------------->
+    <nav id="desktop-nav">
+      <div class="logo">Shrutika Patil</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skill-sec">Skills</a></li>
+          <!-- <li><a href="#qualification">Qualification</a></li> -->
+          <li><a href="#Project-sec">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Shrutika Patil</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Skill-sec" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#Project-sec" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!---------------------------------------------------Profile Section---------------------------------------------->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Photo.jpg" alt="Pratiksha Girmal profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Shrutika Patil</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/shrutika-patil-258a74281/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <!-----------------------------------------------------About------------------------------------------------------>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/AboutP.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container" onclick="window.location.href='https://github.com/your-username/fitlift'">
+                <img
+                  src="./assets/certified.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>02+ completed<br />Internships</p>
+              </div>
+              <div class="details-container" onclick="window.location.href='https://github.com/your-username/fitlift'">
+                <img 
+                  src="./assets/experience.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3></a>Certifications</h3>
+                <p class="hi">05+ Completed<br />Certifications</p>
+                <!-- <div class="portfolio-layer">
+                  <h4>Certificates</h4>
+                  <p>"See Certificates".</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div> -->
+                <!-- <h6 class="ce"><a href="https://github.com/">See My Certificates<br><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h6> -->
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I am an enthusiastic computer science graduate with skills in Java, web technologies, 
+                and database management. I love solving real-world problems through coding and aim to 
+                contribute to innovative projects in the IT industry.
+              </p>
+            </div>
+          </div>
+        </div>
+     <!--   <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />  -->
+    </section>
+    <!--------------------------------------------------Skills Section-------------------------------------------->
+    
+   <section id="Skill-sec">
+      <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+
+    <div class="skills">
+      <div class="skill">
+          <span class="check">&#10004;</span>
+          <span>HTML</span>
+      </div>
+      <div class="skill">
+          <span class="check">&#10004;</span>
+          <span>CSS</span>
+      </div>
+      <div class="skill">
+          <span class="check">&#10004;</span>
+          <span>C</span>
+      </div>
+      <div class="skill">
+          <span class="check">&#10004;</span>
+          <span>JAVA</span>
+      </div>
+  </div>
+
+  <hr>
+
+  <div class="skills">
+    <div class="skill">
+      <span class="check">&#10004;</span>
+      <span>DSA</span>
+  </div>
+      <div class="skill">
+          <span class="check">&#10004;</span>
+          <span>MySQL</span>
+      </div>
+      <div class="skill">
+        <span class="check">&#10004;</span>
+        <span>ChatGPT</span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="skills">
+      <div class="skill">
+          <span class="check">&#10004;</span>
+          <span>Redu</span>
+      </div>
+      <div class="skill">
+          <span class="check">&#10004;</span>
+          <span>Webpack</span>
+      </div>
+      <div class="skill">
+          <span class="check">&#10004;</span>
+          <span>Git</span>
+      </div>
+      <div class="skill">
+          <span class="check">&#10004;</span>
+          <span>Jest</span>
+      </div>
+      <div class="skill">
+          <span class="check">&#10004;</span>
+          <span>Bootstrap</span>
+      </div>
+  </div>
+  </section>
+
+  <!-- Qualification -->
+  <section id="qualification">
+    <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Qualification</h1>
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h3>B-Tech</h3>
+        <p>
+          Sharad Institute of technology College of Engineering, Yadrav<br><br>
+          <i class="fa fa-calendar"></i> 2021 - 2025</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h3>HSC</h3>
+        <p>
+          Ichalkarnji High School, Ichalkarnji<br><br>
+          <i class="fa fa-calendar"></i> 2019 - 2021</p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h3>SSC</h3>
+        <p>
+          New English School and Jr. College,AbdulLat<br><br>
+          <i class="fa fa-calendar"></i> 2018 - 2019</p>
+      </div>
+    </div>
+  </div> 
+  </section>
+  <!-----------------------------Project-section---------------------------------------------------->
+  <section id="Project-sec">
+    <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="pro-container">
+        <div class="project" onclick="window.location.href='https://github.com/your-username/viberr'">
+            <img src="./assets/Portfolio.png" alt="Viberr Logo">
+            <!-- <h2>Viberr</h2>
+            <p>Streaming App</p> -->
+        </div>
+        <div class="project" onclick="window.location.href='https://github.com/your-username/fresh-burger'">
+            <img src="./assets/ecomm.png" alt="Fresh Burger Logo">
+            <!-- <h2>Fresh Burger</h2>
+            <p>Restaurant Shop</p> -->
+        </div>
+        <div class="project" onclick="window.location.href='https://github.com/your-username/hipster'">
+            <img src="./assets/netflix.png" alt="Hipsster Logo">
+            <!-- <h2>Hipsster</h2>
+            <p>Glasses Shop</p> -->
+        </div>
+        <div class="project" onclick="window.location.href='https://github.com/your-username/fitlift'">
+            <img src="./assets/ayur.png" alt="FitLift Logo">
+            <!-- <h2>FitLift</h2>
+            <p>Fitness App</p> -->
+        </div>
+    </div>
+    <div class="pro-title">
+      <div>
+        <h2>Viberr</h2>
+            <p>Streaming App</p>
+      </div>
+      <div>
+        <h2>Viberr</h2>
+            <p>Streaming App</p>
+      </div>
+      <div>
+        <h2>Viberr</h2>
+            <p>Streaming App</p>
+      </div>
+      <div>
+        <h2>Viberr</h2>
+            <p>Streaming App</p>
+      </div>
+
+    </div>
+  </section>
+  <!------------------------------------------------Contact-------------------------------------------------->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:pratikshagirmal1947@gmail.com">patilshrutika2702@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------------------------foter------------------------------------------->
+  <footer>
+    <!-- <nav> -->
+      <!-- <div class="nav-links-container"> -->
+        <ul class="foot-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      <!-- </div> -->
+    <!-- </nav> -->
+    <p>Copyright &#169; 2025 Shrutika Patil. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
